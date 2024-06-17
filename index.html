@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- meta Code -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="./Imgs/airbnb_logo.ico" />
+    <title>Airbnb | Holiday rentals, cabins, beach houses & more</title>
+
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="./style.css"  />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/7297a7166d.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="Container">
+        <div id="navBar">
+            <div id="topNav">
+                <div id="navLogo">
+                    <a href="./index.html"><img  id="navImg" src="./Imgs/navLogo.png" /></a>
+                </div>
+                <div id="navMenu">
+                    <p class="menuItem hoverBig selected">Stays</p>
+                    <p class="menuItem hoverBig">Experiences</p>
+                    <p class="menuItem hoverBig">Online Experiences</p>
+                </div>
+                <div id ="navUser">
+                    <p class="userBtnHome hoverBig" >Airbnb your home</p>
+                    <i class="fa-solid fa-globe hoverBig userGlobeBtn"></i>
+                    <div id =profileDiv>
+                        <i class="fa-solid fa-bars"></i>
+                        <i class="fa-solid fa-user userIcon"></i>
+                    </div>
+                </div>
+
+                
+            </div>
+            <div id="bottomNav">
+                    <div id="inContainer">
+                        <div class="inBox">
+                            <div class="inBoxContent" id="firstBox">
+                                <p class="label">Where</p>
+                                <input type="text" placeholder="Search destinations">
+                            </div>
+                        </div>
+                        <div class="inBox">
+                            <div class="inBoxContent">
+                                <p class="label">Check in</p>       
+                                <input type="text" class="dateIn" placeholder="Add dates">
+                            </div>
+                        </div>
+                        <div class="inBox">
+                            <div class="inBoxContent">
+                                <p class="label">Check out</p>       
+                                <input type="text" class="dateIn" placeholder="Add dates">
+                            </div>
+                        </div>
+                        <div class="inBox lastInBox">
+                            <div class="inBoxContent lastInBoxContent">
+                                <p class="label">Who</p>       
+                                <input type="text" class="cornerIn" placeholder="Add guests">
+                            </div>
+                            <div id="searchBox">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div id="selectMenu">
+                <div id="iconMenu">
+                     <div id="buttonContainer">
+                        <div class="buttonBox">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </div>
+                        <div class="buttonBox">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+                    <div id="iconContainer">
+                        <div class="iconBox selectedIcon">
+                            <i class="fa-solid fa-ticket"></i>
+                            <p>Lakefront</p>
+                        </div>
+                        <div class="iconBox">
+                            <i class="fa-solid fa-house-chimney-window"></i>
+                            <p>Icons</p>
+                        </div>
+                        <div class="iconBox">
+                            <i class="fa-solid fa-gear"></i>
+                            <p>Amazing Views</p>
+                        </div>
+                        <div class="iconBox">
+                            <i class="fa-solid fa-water"></i>
+                            <p>Castles</p>
+                        </div>
+                        <div class="iconBox">
+                            <i class="fa-solid fa-golf-ball-tee"></i>
+                            <p>Amazing Pools</p>
+                        </div>
+                        <div class="iconBox">
+                            <i class="fa-solid fa-bowling-ball"></i>
+                            <p>Farms</p>
+                        </div>
+                        <div class="iconBox">
+                            <i class="fa-solid fa-water-ladder"></i>
+                            <p>Luxe</p>
+                        </div>
+                        <div class="iconBox">
+                            <i class="fa-solid fa-chess-rook"></i>
+                            <p>Treehouse</p>
+                        </div>
+                        <div class="iconBox">
+                            <i class="fa-solid fa-warehouse"></i>
+                            <p>Beach</p>
+                        </div>
+                        <div class="iconBox">
+                            <i class="fa-solid fa-umbrella-beach"></i>
+                            <p>Cabins</p>
+                        </div>
+                        <div class="iconBox">
+                            <i class="fa-solid fa-igloo"></i>
+                            <p>Beachfront</p>
+                        </div>
+                        <div class="iconBox">
+                            <i class="fa-solid fa-sailboat"></i>
+                            <p>National parks</p>
+                        </div>
+                        <div class="iconBox">
+                            <i class="fa-solid fa-hotel"></i>
+                            <p>Historical Homes</p>
+                        </div>
+                        <div class="iconBox">
+                            <i class="fa-solid fa-mug-saucer"></i>
+                            <p>Breakfast</p>
+                        </div>
+                        <div class="iconBox">
+                            <i class="fa-solid fa-house"></i>
+                            <p>Off-the-grid</p>
+                        </div>
+                        <div class="iconBox">
+                            <i class="fa-solid fa-key"></i>
+                            <p>Mansions</p>
+                        </div>
+                        <div class="iconBox">
+                            <i class="fa-solid fa-earth-americas"></i>
+                            <p>Cycladic homes</p>
+                        </div>
+                        <div class="iconBox">
+                            <i class="fa-solid fa-house-flood-water-circle-arrow-right"></i>
+                            <p>Play</p>
+                        </div>
+                        <div class="iconBox">
+                            <i class="fa-solid fa-landmark-dome"></i>
+                            <p>Trending</p>
+                        </div>
+                        <div class="iconBox">
+                            <i class="fa-solid fa-kitchen-set"></i>
+                            <p>Countryside</p>
+                        </div>
+                        <div class="iconBox">
+                            <i class="fa-solid fa-van-shuttle"></i>
+                            <p>Caves</p>
+                        </div>
+                    </div>
+                </div>
+                    <div class="selectButton" id="filterBtn"> 
+                        <i class="fa-solid fa-sliders" ></i>
+                        <p>Filters</p>
+                    </div>
+                    <div class="selectButton">
+                        <p>Display total before taxes</p>
+                        <div id="toggleBtn">
+                            <div id="toggleCircle">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div id="mainBody">
+            <div id="cardContainer">
+                <div class="cardBox fav">
+                    <div class="cardBoxTop">
+                        <div class="cardBtnContainer">
+                            <p class="favBtn">Guest favourite</p>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="buttonBox cardRightBtn">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                        <div class="circleContainer">
+                            <div class="circle selectedCircle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle lastCircle"></div>
+                        </div>
+                    </div>
+                    <div class="cardBoxBottom">
+                        <div class="nameContainer">
+                            <p>Langkawai, Malaysia</p>
+                            <p><i class="fa-solid fa-star"></i> 4.93</p>
+                        </div>
+                        <div class="detailContainer">
+                            <p>3,236 kilometers away</p>
+                            <p>23 - 28 Jul</p>
+                        </div>
+                        <div class="priceContainer">
+                            <p><i class="fa-solid fa-indian-rupee-sign">12,437</i>night</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardBox">
+                    <div class="cardBoxTop">
+                        <div class="cardBtnContainer">
+                            <p class="favBtn">Guest favourite</p>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="buttonBox cardRightBtn">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                        <div class="circleContainer">
+                            <div class="circle selectedCircle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle lastCircle"></div>
+                        </div>
+                    </div>
+                    <div class="cardBoxBottom">
+                        <div class="nameContainer">
+                            <p>Langkawai, Malaysia</p>
+                            <p><i class="fa-solid fa-star"></i> 4.93</p>
+                        </div>
+                        <div class="detailContainer">
+                            <p>3,236 kilometers away</p>
+                            <p>23 - 28 Jul</p>
+                        </div>
+                        <div class="priceContainer">
+                            <p><i class="fa-solid fa-indian-rupee-sign">12,437</i>night</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardBox">
+                    <div class="cardBoxTop">
+                        <div class="cardBtnContainer">
+                            <p class="favBtn">Guest favourite</p>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="buttonBox cardRightBtn">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                        <div class="circleContainer">
+                            <div class="circle selectedCircle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle lastCircle"></div>
+                        </div>
+                    </div>
+                    <div class="cardBoxBottom">
+                        <div class="nameContainer">
+                            <p>Langkawai, Malaysia</p>
+                            <p><i class="fa-solid fa-star"></i> 4.93</p>
+                        </div>
+                        <div class="detailContainer">
+                            <p>3,236 kilometers away</p>
+                            <p>23 - 28 Jul</p>
+                        </div>
+                        <div class="priceContainer">
+                            <p><i class="fa-solid fa-indian-rupee-sign">12,437</i>night</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardBox">
+                    <div class="cardBoxTop">
+                        <div class="cardBtnContainer">
+                            <p class="favBtn">Guest favourite</p>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="buttonBox cardRightBtn">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                        <div class="circleContainer">
+                            <div class="circle selectedCircle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle lastCircle"></div>
+                        </div>
+                    </div>
+                    <div class="cardBoxBottom">
+                        <div class="nameContainer">
+                            <p>Langkawai, Malaysia</p>
+                            <p><i class="fa-solid fa-star"></i> 4.93</p>
+                        </div>
+                        <div class="detailContainer">
+                            <p>3,236 kilometers away</p>
+                            <p>23 - 28 Jul</p>
+                        </div>
+                        <div class="priceContainer">
+                            <p><i class="fa-solid fa-indian-rupee-sign">12,437</i>night</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardBox">
+                    <div class="cardBoxTop">
+                        <div class="cardBtnContainer">
+                            <p class="favBtn">Guest favourite</p>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="buttonBox cardRightBtn">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                        <div class="circleContainer">
+                            <div class="circle selectedCircle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle lastCircle"></div>
+                        </div>
+                    </div>
+                    <div class="cardBoxBottom">
+                        <div class="nameContainer">
+                            <p>Langkawai, Malaysia</p>
+                            <p><i class="fa-solid fa-star"></i> 4.93</p>
+                        </div>
+                        <div class="detailContainer">
+                            <p>3,236 kilometers away</p>
+                            <p>23 - 28 Jul</p>
+                        </div>
+                        <div class="priceContainer">
+                            <p><i class="fa-solid fa-indian-rupee-sign">12,437</i>night</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardBox fav">
+                    <div class="cardBoxTop">
+                        <div class="cardBtnContainer">
+                            <p class="favBtn">Guest favourite</p>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="buttonBox cardRightBtn">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                        <div class="circleContainer">
+                            <div class="circle selectedCircle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle lastCircle"></div>
+                        </div>
+                    </div>
+                    <div class="cardBoxBottom">
+                        <div class="nameContainer">
+                            <p>Langkawai, Malaysia</p>
+                            <p><i class="fa-solid fa-star"></i> 4.93</p>
+                        </div>
+                        <div class="detailContainer">
+                            <p>3,236 kilometers away</p>
+                            <p>23 - 28 Jul</p>
+                        </div>
+                        <div class="priceContainer">
+                            <p><i class="fa-solid fa-indian-rupee-sign">12,437</i>night</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardBox">
+                    <div class="cardBoxTop">
+                        <div class="cardBtnContainer">
+                            <p class="favBtn">Guest favourite</p>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="buttonBox cardRightBtn">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                        <div class="circleContainer">
+                            <div class="circle selectedCircle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle lastCircle"></div>
+                        </div>
+                    </div>
+                    <div class="cardBoxBottom">
+                        <div class="nameContainer">
+                            <p>Langkawai, Malaysia</p>
+                            <p><i class="fa-solid fa-star"></i> 4.93</p>
+                        </div>
+                        <div class="detailContainer">
+                            <p>3,236 kilometers away</p>
+                            <p>23 - 28 Jul</p>
+                        </div>
+                        <div class="priceContainer">
+                            <p><i class="fa-solid fa-indian-rupee-sign">12,437</i>night</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardBox">
+                    <div class="cardBoxTop">
+                        <div class="cardBtnContainer">
+                            <p class="favBtn">Guest favourite</p>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="buttonBox cardRightBtn">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                        <div class="circleContainer">
+                            <div class="circle selectedCircle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle lastCircle"></div>
+                        </div>
+                    </div>
+                    <div class="cardBoxBottom">
+                        <div class="nameContainer">
+                            <p>Langkawai, Malaysia</p>
+                            <p><i class="fa-solid fa-star"></i> 4.93</p>
+                        </div>
+                        <div class="detailContainer">
+                            <p>3,236 kilometers away</p>
+                            <p>23 - 28 Jul</p>
+                        </div>
+                        <div class="priceContainer">
+                            <p><i class="fa-solid fa-indian-rupee-sign">12,437</i>night</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardBox">
+                    <div class="cardBoxTop">
+                        <div class="cardBtnContainer">
+                            <p class="favBtn">Guest favourite</p>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="buttonBox cardRightBtn">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                        <div class="circleContainer">
+                            <div class="circle selectedCircle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle lastCircle"></div>
+                        </div>
+                    </div>
+                    <div class="cardBoxBottom">
+                        <div class="nameContainer">
+                            <p>Langkawai, Malaysia</p>
+                            <p><i class="fa-solid fa-star"></i> 4.93</p>
+                        </div>
+                        <div class="detailContainer">
+                            <p>3,236 kilometers away</p>
+                            <p>23 - 28 Jul</p>
+                        </div>
+                        <div class="priceContainer">
+                            <p><i class="fa-solid fa-indian-rupee-sign">12,437</i>night</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardBox fav">
+                    <div class="cardBoxTop">
+                        <div class="cardBtnContainer">
+                            <p class="favBtn">Guest favourite</p>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="buttonBox cardRightBtn">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                        <div class="circleContainer">
+                            <div class="circle selectedCircle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle lastCircle"></div>
+                        </div>
+                    </div>
+                    <div class="cardBoxBottom">
+                        <div class="nameContainer">
+                            <p>Langkawai, Malaysia</p>
+                            <p><i class="fa-solid fa-star"></i> 4.93</p>
+                        </div>
+                        <div class="detailContainer">
+                            <p>3,236 kilometers away</p>
+                            <p>23 - 28 Jul</p>
+                        </div>
+                        <div class="priceContainer">
+                            <p><i class="fa-solid fa-indian-rupee-sign">12,437</i>night</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js" ></script>
+</body>
+</html>
